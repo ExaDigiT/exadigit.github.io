@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to ExaDigiT site!</title>
+    <title>Welcome to ExaDigiT Site!</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,63 +11,86 @@
             padding: 0;
             background-color: #f4f4f4;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .header {
-            background-color: #008cba;
+        .header, .footer {
+            width: 700px;
+            background-color: #007833;
             color: white;
             padding: 10px 0;
         }
-        .p {
-            text-align: justify;
+        .header h1 {
+            margin: 0;
         }
         .content {
+            background-color: white;
             padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .content img {
+            display: block;
+            margin: 0 auto 20px;
+        }
+        .content p {
+            text-align: justify;
+            margin: 0 0 10px;
+        }
+        .content a {
+            color: #008cba;
+            text-decoration: none;
+        }
+        .links {
+          <!--list-style-type: none;-->
+            padding: 0;
+        }
+        .links li {
+            margin: 5px 0;
         }
         .footer {
             background-color: #333;
             color: white;
-            text-align: center;
             padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            width: 700px;
+        }
+        .footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <h1>ExaDigiT: an open source framework for developing digital twins of supercomputers</h1>
+        <h1>ExaDigiT: An Open Source Framework for Developing Digital Twins of Supercomputers</h1>
     </div>
-
-    <img src="logo.png" align="center">
 
     <div class="content">
-        <p align="justify">Over the past year, we have embarked upon an ambitious initiative to develop a comprehensive digital twin of the Frontier supercomputer. This twin includes: 3D asset modeling with virtual and augmented reality capabilities, telemetry data assimilation, AI/ML integration, simulations, and reinforcement learning for optimization. Key simulations under development include: (1) a transient simulation of the thermo-fluid cooling system from cooling tower to cold plate, (2) a rectifier loss model predicting heat generation and rectification losses, (3) a job scheduling simulator, and (4) a parallel discrete-event simulator to study network congestion. This digital twin offers insights into operational strategies, "what-if" scenarios, as well as elucidates complex, cross-disciplinary transient behaviors; it also serves as a design tool for future system prototyping. Built on an open software stack (Modelica, SST Macro, Unreal Engine) with an aim to foster community-driven development, we have formed a partnership with supercomputer centers around the world to develop an open framework for modeling supercomputers.</p>
-
-
+        <img src="exadigit.png" alt="ExaDigiT Logo">
+        <p>Over the past year, we have embarked upon an ambitious initiative to develop a comprehensive digital twin of the Frontier supercomputer. This twin includes: 3D asset modeling with virtual and augmented reality capabilities, telemetry data assimilation, AI/ML integration, simulations, and reinforcement learning for optimization. Key simulations under development include:</p>
+        <ol>
+            <li>A transient simulation of the thermo-fluid cooling system from cooling tower to cold plate.</li>
+            <li>A rectifier loss model predicting heat generation and rectification losses.</li>
+            <li>A job scheduling simulator.</li>
+            <li>A parallel discrete-event simulator to study network congestion.</li>
+        </ol>
+        <p>This digital twin offers insights into operational strategies, "what-if" scenarios, as well as elucidates complex, cross-disciplinary transient behaviors. It also serves as a design tool for future system prototyping. Built on an open software stack (Modelica, SST Macro, Unreal Engine) with an aim to foster community-driven development, we have formed a partnership with supercomputer centers around the world to develop an open framework for modeling supercomputers.</p>
+        <ul class="links">
+            <li><a href="https://code.ornl.gov/exadigit">ExaDigiT Source Repositories Home</a></li>
+            <li><a href="https://code.ornl.gov/exadigit/raps">Source Repository raps</a></li>
+            <li><a href="https://code.ornl.gov/exadigit/exadigitUE5">Source Repository exadigitUE5</a></li>
+            <li>More updates coming soon!</li>
+        </ul>
         <p>For more interest, contact Wes Brewer at <a href="mailto:brewerwh@ornl.gov">brewerwh@ornl.gov</a></p>
     </div>
-    <div>
-        <ul>
-          <li>
-            <a href="https://code.ornl.gov/exadigit"> ExaDigiT Source Repositories Home</a><br>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="https://code.ornl.gov/exadigit/raps"> Source Repository raps</a></li><li>
-            <a href="https://code.ornl.gov/exadigit/exadigitUE5"> Source Repository exadigitUE5</a>
-          </li>
-        </ul>
-    </div>
-
-
 
     <div class="footer">
-        <p>&copy; 2023 ExaDigiT Corporation</p>
+        <p>&copy; 2023 ExaDigiT Group</p>
     </div>
 
 </body>
 </html>
-
