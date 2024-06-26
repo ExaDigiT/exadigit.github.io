@@ -21,26 +21,11 @@
 
     <div class="content">
         <img src="exadigit.png" alt="ExaDigiT Logo">
-        <p>Over the past year, we have embarked upon an ambitious initiative to develop a comprehensive digital twin of the Frontier supercomputer. This twin includes: 3D asset modeling with virtual and augmented reality capabilities, telemetry data assimilation, AI/ML integration, simulations, and reinforcement learning for optimization. Key simulations under development include:</p>
-        <ol>
-            <li>A transient simulation of the thermo-fluid cooling system from cooling tower to cold plate.</li>
-            <li>A rectifier loss model predicting heat generation and rectification losses.</li>
-            <li>A job scheduling simulator.</li>
-            <li>A parallel discrete-event simulator to study network congestion.</li>
-        </ol>
-        <p>This digital twin offers insights into operational strategies, "what-if" scenarios, as well as elucidates complex, cross-disciplinary transient behaviors. It also serves as a design tool for future system prototyping. Built on an open software stack (Modelica, SST Macro, Unreal Engine) with an aim to foster community-driven development, we have formed a partnership with supercomputer centers around the world to develop an open framework for modeling supercomputers.</p>
-        <ul class="links">
-            <li><a href="https://code.ornl.gov/exadigit">ExaDigiT Source Repositories Home</a></li>
-            <li><a href="https://code.ornl.gov/exadigit/raps">Source Repository raps</a></li>
-            <li><a href="https://code.ornl.gov/exadigit/exadigitUE5">Source Repository exadigitUE5</a></li>
-            <li>More updates coming soon!</li>
-        </ul>
-        <p>For more interest, contact Wes Brewer at <a href="mailto:brewerwh@ornl.gov">brewerwh@ornl.gov</a></p>
-    </div>
-
-    <div class="org_banner_container">
-      <div class="org_banner_wrapper">
+        <h2> Participating Organizations:</h2>
+        <!-- Add both in this and in the banner on the front page!-->
         <!-- ORNL EPCC CSCPAWSEY-->
+    </div>
+    <div class="orgs">
         <div class="org_banner">
           <a href="https://ornl.gov" target="_blank">
             <img src="https://www.ornl.gov/themes/custom/ornl/images/ornl-logo-green.svg" alt="ORNL Logo">
@@ -95,7 +80,6 @@
             <img src="https://www.nvidia.com/en-us/about-nvidia/legal-info/logo-brand-usage/_jcr_content/root/responsivegrid/nv_container_392921705/nv_container/nv_image.coreimg.100.1070.png/1703060329053/nvidia-logo-vert.png" alt="NVIDIA Logo">
           </a>
         </div>
-      </div>
     </div>
 
     <div class="footer">
@@ -103,32 +87,5 @@
     </div>
 
 </body>
-
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const wrapper = document.querySelector('.org_banner_wrapper');
-        const banners = Array.from(document.querySelectorAll('.org_banner'));
-        let currentIndex = 0;
-        const bannerWidth = banners[0].offsetWidth;
-
-        function rotateBanners() {
-            currentIndex++;
-            wrapper.style.transform = `translateX(-${currentIndex * bannerWidth}px)`;
-
-            // Check if the first banner is out of view
-            if (currentIndex >= banners.length) {
-                currentIndex = 0;
-                wrapper.style.transition = 'none';
-                wrapper.style.transform = `translateX(0)`;
-                wrapper.appendChild(wrapper.firstElementChild);
-                wrapper.offsetHeight; // Trigger a reflow, flushing the CSS changes
-                wrapper.style.transition = 'transform 0.5s linear';
-            }
-        }
-
-        // Start the rotation
-        setInterval(rotateBanners, 3000); // Adjust the interval time as needed
-    });
-</script>
 
 </html>
