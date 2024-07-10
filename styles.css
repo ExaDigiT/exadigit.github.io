@@ -6,43 +6,84 @@ body {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100vh;
 }
-.header, .footer {
-  width: 800px;
-  background-color: #007833;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-}
-.header h1 {
-  margin: 0;
+
+.header {
+  background-color: #ffffff;
+  padding: 12px 48px;
+  box-shadow: 0px 0px 4px gray;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
 }
 
 .header nav {
   display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
+  gap: 12px;
+  width: 1280px;
+  justify-content: center;
 }
 
-.header nav a {
-  text-decoration: none;
+.header a {
+  all: unset;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 6px 12px;
+  color: #171717;
+  border-radius: 4px;
+  transition: all 500ms ease-in-out;
+}
+
+.header a:hover {
+  color: #007833;
+}
+
+.main {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+section {
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 0px;
+  gap: 12px;
+  width: 100%;
+  background-color: #007833;
   color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  padding: 12px 0px;
+  box-shadow: 0px 0px 4px gray;
 }
 
-.header nav a:hover {
-  background-color: #005f73;
+.banner_image {
+  margin-top: 24px;
+  width: 600px;
 }
 
-.content {                                                                                                                                                                                                                                                                     background-color: white;
-  padding: 20px;
-  max-width: 600px;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.banner p {
+  margin: 0
+}
+
+.content {
+  background-color: white;
+  padding: 24px;
+  width: 1280px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px gray;
   text-align: left;
 }
 .content img {
@@ -58,14 +99,6 @@ body {
   color: #008cba;
   text-decoration: none;
 }
-.orgs {                                                                                                                                                                                                                                                                     background-color: white;
-  padding: 20px;
-  max-width: 800px;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
-}
 
 .links {
   padding: 0;
@@ -73,52 +106,55 @@ body {
 .links li {
   margin: 5px 0;
 }
+
 .org_banner_container {
-  width: 800px;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  position: relative;
-}
-
-.org_banner_wrapper {
+  margin-top: auto;
   display: flex;
-  transition: transform 0.5s linear;
-  will-change: transform;
+  flex-direction: column;
+  width: 1280px;
+  gap: 24px;
+  margin: 24px auto;
 }
 
-.org_banner {
-  flex-shrink: 0;
-  width: 800px;
+.org_banner_container p {
+  font-size: large;
+  text-align: center;
+}
+
+.orgs, .partners {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
+  flex-direction: column;
 }
 
-.org_banner a {
+.orgs .logos, .partners .logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.org_banner_container a {
   display: block;
   margin: 0 20px;
   transition: transform 0.3s;
 }
 
-.org_banner img {
-  max-height: 100px;
+.org_banner_container img {
+  height: 64px;
   display: block;
   margin: 0 auto;
+  transition: all 350ms ease;
 }
 
-.org_banner a:hover img {
+.org_banner_container a:hover img {
   transform: scale(1.1);
 }
+
 .footer {
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-  width: 800px;
+  margin: 0px auto;
   text-align: center;
 }
+
 .footer p {
-  margin: 0;
+  all: unset;
 }
