@@ -11,7 +11,7 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 li {
@@ -94,10 +94,27 @@ section {
   margin: 0;
 }
 
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #e0e9d8;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #007833;
+    color: white;
+}
+
+
 .content {
-  background-color: white;
-  padding: 32px; /* Increased padding */
-  width: 100%;
+background-color: white;
+padding: 32px;
+width: 100%;
   max-width: 1280px;
   border-radius: 4px;
   box-shadow: 0px 0px 4px gray;
@@ -112,7 +129,7 @@ section {
 
 .content p {
   text-align: justify;
-  margin: 0 0 20px; /* Increased margin */
+  margin: 0 0 20px;
 }
 
 .content a {
@@ -120,12 +137,17 @@ section {
   text-decoration: none;
 }
 
+.content h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
 .links {
   padding: 0;
 }
 
 .links li {
-  margin: 10px 0; /* Increased margin */
+  margin: 10px 0;
 }
 
 .org_banner_container {
@@ -144,8 +166,16 @@ section {
 }
 
 .orgs, .partners {
+  background-color: white;
   display: flex;
   flex-direction: column;
+  background-color: white;
+  padding: 16px;
+  width: 100%;
+  max-width: 1280px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px gray;
+  text-align: left;
 }
 
 .orgs .logos, .partners .logos {
@@ -153,6 +183,11 @@ section {
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
+}
+
+.orgs h2, .partners h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 .org_banner_container a {
@@ -190,15 +225,15 @@ section {
   }
 
   .main {
-    padding: 0 16px; /* Adjusted padding */
+    padding: 0 16px;
   }
 
   .section {
-    padding: 16px 0; /* Adjusted padding */
+    padding: 16px 0;
   }
 
   .content {
-    padding: 20px; /* Adjusted padding */
+    padding: 20px;
   }
 
   .logos {
@@ -217,15 +252,15 @@ section {
   }
 
   .main {
-    padding: 0 8px; /* Adjusted padding */
+    padding: 0 8px;
   }
 
   .section {
-    padding: 8px 0; /* Adjusted padding */
+    padding: 8px 0;
   }
 
   .content {
-    padding: 15px; /* Adjusted padding */
+    padding: 15px;
   }
 
   .org_banner_container img {
