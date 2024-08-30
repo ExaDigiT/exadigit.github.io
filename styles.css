@@ -218,31 +218,12 @@ width: 100%;
   all: unset;
 }
 
-/* Hide menu button and show header on larger screens */
-@media (min-width: 769px) {
-  .menu-toggle {
-    display: none;
-  }
-
-  .header {
-    display: flex;
-  }
-}
-
 /* Media Queries */
 @media (max-width: 768px) {
-  .header nav {
+  .header {
     flex-direction: column;
     gap: 10px;
     display: none;
-  }
-
-  .header nav a {
-    display: block;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: left;
   }
 
   .main {
