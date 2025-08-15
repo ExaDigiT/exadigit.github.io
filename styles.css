@@ -198,10 +198,11 @@ width: 100%;
 }
 
 .org_banner_container img {
-  height: 64px;
   display: block;
-  margin: 0 auto;
-  transition: all 350ms ease;
+  width: 100%;     /* fill the .orgs box (up to its max-width) */
+  height: auto;    /* keep aspect ratio */
+  max-width: none; /* don’t cap at intrinsic size */
+  margin: 16px 0 0;
 }
 
 .org_banner_container a:hover img {
