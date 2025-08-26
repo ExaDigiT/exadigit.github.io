@@ -267,3 +267,25 @@ width: 100%;
   }
 
 }
+
+.content {
+  position: relative;  /* allow absolute positioning inside */
+  background-color: white;
+  padding: 16px;
+  width: 100%;
+  max-width: 1280px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px gray;
+  text-align: left;
+}
+
+.rd100-wrapper {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.rd100-bottom-logo {
+  max-width: 100px;  /* adjust to taste */
+  height: auto;
+}
