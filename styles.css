@@ -289,3 +289,61 @@ width: 100%;
   max-width: 100px;  /* adjust to taste */
   height: auto;
 }
+
+/* Dark mode: follows the system setting */
+:root {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e4e4e4;
+  }
+
+  .header {
+    background-color: #1e1e1e;
+    box-shadow: 0px 0px 4px #000;
+  }
+
+  .header a {
+    color: #e4e4e4;
+  }
+
+  .header a:hover {
+    color: #4cc27a;
+  }
+
+  .banner,
+  .content,
+  .orgs,
+  .partners {
+    box-shadow: 0px 0px 4px #000;
+  }
+
+  .content,
+  .orgs,
+  .partners {
+    background-color: #1e1e1e;
+    color: #e4e4e4;
+  }
+
+  .content a {
+    color: #5bc0de;
+  }
+
+  .button {
+    background-color: #2f4a38;
+  }
+
+  .button:hover {
+    background-color: #007833;
+  }
+
+  /* Diagrams and logos are drawn for light backgrounds; keep them legible */
+  .content img:not(.rd100-bottom-logo),
+  .org_banner_container img {
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+}
