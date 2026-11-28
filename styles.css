@@ -290,6 +290,15 @@ width: 100%;
   height: auto;
 }
 
+/* Narrow screens: put the logo in normal flow so it can't cover text */
+@media (max-width: 700px) {
+  .rd100-wrapper {
+    position: static;
+    text-align: right;
+    margin-top: 8px;
+  }
+}
+
 /* Dark mode: follows the system setting */
 :root {
   color-scheme: light dark;
@@ -346,4 +355,11 @@ width: 100%;
     background-color: #ffffff;
     border-radius: 4px;
   }
+}
+
+/* Make the embedded video scale to the screen width, keeping 16:9 */
+.content iframe {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
 }
